@@ -4,13 +4,13 @@
   * 2. perfil (OK) 
   * 3. funcionario (OK)
   * 4. emprestimo () {Idemprestimo (PK), data, idUsuario(FK), IdFuncionario(PK), IdAcervo(FK)}
-  * 5. devolucao 
-  * 6. doacao 
-  * 7. status
-  * 8. acervo 
+  * 5. devolucao (){IdDevolucao(PK), data, IdUsuario(FK), IdFuncionario(FK), IdAcervo(FK) }
+  * 6. doacao () {IdDoacao(PK), data, IdUsuario(FK), IdFuncionario(FK), IdAcervo(FK), descricao }
+  * 7. status () {IdStatus(PK), descricao}
+  * 8. acervo () {IdAcervo(PK), Autor, Genero, Ano, livro, previa}
   * 9. Leitor (ok){idLeitor(PF) , pai, mae, dt_nasc , cpf, rg, endereco, sexo, telefone, idUsuario(FK) }
-  * 10. Feedback
-**/
+  * 10. Feedback () {IdFeedback(PK), descricao, IdAcervo(FK)}
+*/
 
 -- Criar banco de dados --
 create database CoraCoralina;
