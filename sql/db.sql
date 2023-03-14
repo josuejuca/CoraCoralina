@@ -10,7 +10,7 @@
   * 8. acervo 
   * 9. Leitor (ok){idLeitor(PF) , pai, mae, dt_nasc , cpf, rg, endereco, sexo, telefone, idUsuario(FK) }
   * 10. Feedback
-*/
+**/
 
 -- Criar banco de dados --
 create database CoraCoralina;
