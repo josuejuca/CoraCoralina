@@ -12,7 +12,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
         $email = $mysqli->real_escape_string($_POST['email']);
         $senha = $mysqli->real_escape_string($_POST['senha']);
 
-        $sql_code = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
+        $sql_code = "SELECT * FROM usuario WHERE email = '$email' AND senha = '$senha'";
         $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: " . $mysqli->error);
 
         $quantidade = $sql_query->num_rows;
@@ -25,8 +25,10 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
                 session_start();
             }
 
-            $_SESSION['id'] = $usuario['id'];
+            $_SESSION['idUsuario'] = $usuario['idUsuario'];
             $_SESSION['nome'] = $usuario['nome'];
+            $_SESSION['perfil_idPerfil'] = $usuario['perfil_idPerfil'];
+            
 
             header("Location: painel.php");
 
@@ -34,18 +36,20 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
             echo "Falha ao logar! E-mail ou senha incorretos";
         }
 
-    }
+    }   
 
 }
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Perdemo</title>
 </head>
+
 <body>
     <h1>Acesse sua conta</h1>
     <form action="" method="POST">
@@ -62,4 +66,5 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
         </p>
     </form>
 </body>
+
 </html>

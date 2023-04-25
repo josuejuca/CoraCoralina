@@ -2,6 +2,10 @@
 
 include('protect.php');
 
+if($_SESSION['perfil_idPerfil'] != 1) {
+    die("Você não tem permissão para acessar esta página.");
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +18,7 @@ include('protect.php');
 </head>
 
 <body>
-    Bem vindo ao Painel, <?php echo $_SESSION['nome']; ?>.
+    Bem vindo ao Painel de adm, <?php echo $_SESSION['nome']; ?>.
 
     <p>
         <a href="logout.php">Sair</a>
