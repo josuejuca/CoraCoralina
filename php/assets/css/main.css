@@ -1,0 +1,26 @@
+/* 
+* Josué Juca - ETC T.I Turma F
+* Cora Coralina - Template  
+* Esse template foi feito usando Bootstrap e a junção de varios codigos CSS
+*/
+
+
+@import url(formatacao-coracoralina.css); 
+@import url(colunas.css);
+@import url(responsivo.css);
+@import url(ferramentas-de-estilo.css);
+@import url(tabelas.css);
+@import url(formularios.css);
+
+
+.white-bg {
+    background-color: #fff !important;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.red {
+    text-align: red !important;
+}
