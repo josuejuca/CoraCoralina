@@ -24,4 +24,4 @@ Repositório para guardar os arquivos do TCC.
 <!-- Site -->
 O site hospedado (na web) pode conter alguns bugs em relação ao servidor. A versão que está na pasta php é a do dia da apresentação. 
 
-Projeto apresentado dia 28/06/2023 - Auditorio 1 ETCDF 
+Projeto apresentado dia 28/06/2023 - Auditório 1 ETCDF 
