@@ -4,6 +4,8 @@
   <img id="home" src="https://assets-juca.netlify.app/etc-logo.png" alt="Logo ETC">
 </p>
 
+
+<!-- --->
 <h1 align="center">TI- Técnico em Informática</h1>
 
 <p align="center">
