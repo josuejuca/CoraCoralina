@@ -5,7 +5,6 @@
 </p>
 
 
-<!-- --->
 <h1 align="center">TI- Técnico em Informática</h1>
 
 <p align="center">
